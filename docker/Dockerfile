@@ -9,9 +9,11 @@ ENV PYTHONPATH=/app
 RUN pip install gunicorn && pip install -r /app/requirements.txt
 
 ENV PORT 5001
+ENV ENABLE_HTTPS False
 ENV TIMEOUT 60
 ENV WORKERS 2
 
+COPY ./docker/start.sh /start.sh
 
-CMD gunicorn --bind 0.0.0.0:$PORT --workers $WORKERS --timeout $TIMEOUT mesos_sandbox_fetch:app
+CMD ["/bin/bash","/start.sh"]
 
