@@ -43,6 +43,6 @@ jobs:
         with:
           context: .
           file: docker/Dockerfile
-          push: ${{ startsWith(github.ref, 'refs/tags/') }}
+          push: true
           tags: ${{ steps.docker_meta.outputs.tags }}
           labels: ${{ steps.docker_meta.outputs.labels }}
