@@ -1,6 +1,7 @@
 # mesos-sandbox-fetcher
 
 This is a simple proxy service that allows to fetch small files (e.g. stdout, sterr) from the Mesos task sandbox.
+The service must be able to reach the Mesos Master (default port 5050) and all the slave nodes (default port 5051). 
 
 ## Usage:
 
