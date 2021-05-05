@@ -97,7 +97,7 @@ Resource [11ebadaf-1805-3b26-b870-02427cf8dc4c]:
 ```
 
 
-Fetch the stdout providing the deployment `UUID` as `task_id`:
+Fetch the stdout providing the Chronos resource `UUID` as `task_id`:
 
 ```
 curl https://mesos-sandbox-fetch.example.it/fetch/11ebadaf-1805-3b26-b870-02427cf8dc4c?filename=stdout
