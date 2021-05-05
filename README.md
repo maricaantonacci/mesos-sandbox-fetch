@@ -123,6 +123,17 @@ Create the `config.json` file setting the following variables:
 | MESOS_PASSWORD | Mesos Password | Y | N/A
 | LOG_LEVEL      | logging level  | N | info 
 
+Example:
+
+````
+{
+    "MESOS_URL": "http://mesos-m0.example.it:5050",
+    "MESOS_USERNAME": "admin",
+    "MESOS_PASSWORD": "*******"
+
+}
+````
+
 Then you can start the service using the docker image, for example, running the following command:
 
 ```
